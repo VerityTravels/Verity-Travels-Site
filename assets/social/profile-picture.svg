@@ -1,0 +1,6 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#1B2A4A"/>
+  <circle cx="540" cy="540" r="480" fill="none" stroke="#B8964F" stroke-width="10"/>
+  <text x="540" y="600" text-anchor="middle" font-family="Liberation Serif, Georgia, serif" font-size="440" font-weight="bold" fill="#B8964F">V</text>
+  <path d="M 380 720 Q 460 660 540 720 Q 620 780 700 720" fill="none" stroke="#B8964F" stroke-width="14" stroke-linecap="round"/>
+</svg>

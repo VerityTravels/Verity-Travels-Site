@@ -1,0 +1,7 @@
+<svg width="1500" height="500" viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1500" height="500" fill="#1B2A4A"/>
+  <path d="M 0 420 Q 200 380 400 420 Q 600 460 800 420 Q 1000 380 1200 420 Q 1400 460 1500 430 L 1500 500 L 0 500 Z" fill="#10182B"/>
+  <path d="M 560 250 Q 610 210 660 250 Q 710 290 760 250" fill="none" stroke="#B8964F" stroke-width="6" stroke-linecap="round"/>
+  <text x="750" y="200" text-anchor="middle" font-family="Liberation Serif, Georgia, serif" font-size="90" fill="#FFFFFF">Verity</text>
+  <text x="750" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" letter-spacing="6" fill="#D8C08F">TRAVEL, THOUGHTFULLY PLANNED</text>
+</svg>

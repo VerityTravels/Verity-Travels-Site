@@ -571,6 +571,29 @@
   footer a { color: #C9D0DE; text-decoration: none; }
   footer a:hover { color: var(--gold-soft); }
   footer .foot-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  footer .foot-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 18px;
+  }
+  footer .foot-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(184, 150, 79, 0.35);
+    border-radius: 50%;
+    color: #C9D0DE;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+  }
+  footer .foot-social a:hover {
+    color: var(--navy-deep);
+    background: var(--gold-soft);
+    border-color: var(--gold-soft);
+  }
+  footer .foot-social svg { width: 16px; height: 16px; fill: currentColor; }
   footer .copyright { font-size: 0.82rem; color: #7C8598; }
 
   /* ---------- Responsive ---------- */
@@ -954,6 +977,20 @@
       <div>
         <div class="foot-logo">Verity</div>
         <p style="max-width:32ch; margin-top:10px; color:#9BA5BC;">Travel, thoughtfully planned.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/veritytravelsco" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.7c-.9.3-1.6.8-2.3 1.5C1.1 2.9.6 3.6.3 4.5-.1 5.3-.3 6.2-.3 7.5-.4 8.8-.4 9.2-.4 12.5s0 3.7.1 4.9c0 1.3.2 2.2.6 3 .3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.3-.7-.7-1.4-1.2-2.3-1.5-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.5-1.5 1.5-.8 0-1.5-.6-1.5-1.5s.6-1.5 1.5-1.5 1.5.7 1.5 1.5z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/veritytravels" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.5.1 2.8.1v3.2h-1.9c-1.5 0-1.8.7-1.8 1.7v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z"/></svg>
+          </a>
+          <a href="https://x.com/veritytravels" aria-label="X (Twitter)" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@veritytravelsco" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.6 6.3c-1.5-.3-2.9-1.1-3.9-2.3-.6-.7-1-1.6-1.2-2.5V.9h-3.7v14.9c0 .9-.3 1.7-.9 2.4-.6.6-1.4 1-2.3 1s-1.7-.4-2.3-1c-.6-.6-.9-1.4-.9-2.4s.3-1.7.9-2.4c.6-.6 1.4-1 2.3-1 .4 0 .8.1 1.2.2v-3.8c-.4-.1-.8-.1-1.2-.1-1.9 0-3.7.8-5 2.1-1.3 1.3-2.1 3.1-2.1 5s.8 3.7 2.1 5c1.3 1.3 3.1 2.1 5 2.1s3.7-.8 5-2.1c1.3-1.3 2.1-3.1 2.1-5V8.7c1.5 1 3.2 1.6 5 1.6V6.6c-.7 0-1.4-.1-2-.3z"/></svg>
+          </a>
+        </div>
       </div>
       <div class="foot-links">
         <a href="#services">Services</a>
