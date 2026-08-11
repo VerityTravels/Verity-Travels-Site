@@ -9,250 +9,261 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --navy: #1B2A4A;
-    --navy-deep: #10182B;
-    --gold: #B8964F;
-    --gold-soft: #D8C08F;
-    --cream: #EFE6D3;
-    --paper: #FFFFFF;
-    --ink: #2B2A28;
-    --ink-soft: #6B6558;
-    --line: #CBB98D;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--cream);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  h1, h2, h3, .display {
-    font-family: 'Fraunces', serif;
-    color: var(--navy);
-    font-weight: 500;
-    line-height: 1.15;
-    margin: 0;
-  }
-  a { color: inherit; }
-  .eyebrow {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-  }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+:root {
+--navy: #1B2A4A;
+--navy-deep: #10182B;
+--gold: #B8964F;
+--gold-soft: #D8C08F;
+--cream: #EFE6D3;
+--paper: #FFFFFF;
+--ink: #2B2A28;
+--ink-soft: #6B6558;
+--line: #CBB98D;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: var(--cream);
+color: var(--ink);
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .display {
+font-family: 'Fraunces', serif;
+color: var(--navy);
+font-weight: 500;
+line-height: 1.15;
+margin: 0;
+}
+a { color: inherit; }
+.eyebrow {
+font-family: 'Inter', sans-serif;
+font-size: 0.78rem;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: var(--gold);
+font-weight: 600;
+}
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
 
-  header.site-nav {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(239, 230, 211, 0.94);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-row {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 32px; max-width: 1120px; margin: 0 auto;
-  }
-  .logo {
-    display: flex; align-items: center; gap: 8px;
-    font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--navy); text-decoration: none;
-  }
-  nav.links { display: flex; gap: 32px; align-items: center; font-size: 0.92rem; }
-  nav.links a { text-decoration: none; color: var(--ink); }
-  nav.links a:hover { color: var(--gold); }
-  .btn {
-    display: inline-block; padding: 12px 26px; border-radius: 2px;
-    font-size: 0.88rem; font-weight: 600; letter-spacing: 0.03em;
-    text-decoration: none; text-align: center;
-  }
-  .btn-primary { background: var(--navy); color: var(--paper); }
-  .btn-primary:hover { background: var(--navy-deep); }
+header.site-nav {
+position: sticky; top: 0; z-index: 50;
+background: rgba(239, 230, 211, 0.94);
+backdrop-filter: blur(6px);
+border-bottom: 1px solid var(--line);
+}
+.nav-row {
+display: flex; align-items: center; justify-content: space-between;
+padding: 18px 32px; max-width: 1120px; margin: 0 auto;
+}
+.logo {
+display: flex; align-items: center; gap: 8px;
+font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--navy); text-decoration: none;
+}
+nav.links { display: flex; gap: 32px; align-items: center; font-size: 0.92rem; }
+nav.links a { text-decoration: none; color: var(--ink); }
+nav.links a:hover { color: var(--gold); }
+.btn {
+display: inline-block; padding: 12px 26px; border-radius: 2px;
+font-size: 0.88rem; font-weight: 600; letter-spacing: 0.03em;
+text-decoration: none; text-align: center;
+}
+.btn-primary { background: var(--navy); color: var(--paper); }
+.btn-primary:hover { background: var(--navy-deep); }
 
-  .journal-hero { padding: 72px 0 56px; }
-  .journal-hero h1 { font-size: clamp(2.2rem, 4vw, 3.1rem); margin: 14px 0 16px; }
-  .journal-hero p { color: var(--ink-soft); max-width: 56ch; font-size: 1.05rem; }
+.journal-hero { padding: 72px 0 56px; }
+.journal-hero h1 { font-size: clamp(2.2rem, 4vw, 3.1rem); margin: 14px 0 16px; }
+.journal-hero p { color: var(--ink-soft); max-width: 56ch; font-size: 1.05rem; }
 
-  .post-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    padding: 0 0 96px;
-  }
-  .post-card {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-top: 2px solid var(--gold);
-    border-radius: 3px;
-    padding: 32px;
-    box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-  }
-  .post-card .cat {
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .post-card h2 { font-size: 1.5rem; margin-bottom: 10px; }
-  .post-card p.excerpt { color: var(--ink-soft); font-size: 0.98rem; max-width: 62ch; margin: 0; }
-  .post-card .meta { font-size: 0.82rem; color: var(--ink-soft); margin-top: 14px; }
-  .post-card .arrow {
-    font-family: 'Fraunces', serif;
-    font-size: 1.4rem;
-    color: var(--gold);
-    margin-top: 16px;
-  }
+.post-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 28px;
+padding: 0 0 96px;
+}
+.post-card {
+background: var(--paper);
+border: 1px solid var(--line);
+border-top: 2px solid var(--gold);
+border-radius: 3px;
+padding: 32px;
+box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-decoration: none;
+}
+.post-card .cat {
+font-size: 0.78rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--gold);
+font-weight: 600;
+margin-bottom: 10px;
+}
+.post-card h2 { font-size: 1.5rem; margin-bottom: 10px; }
+.post-card p.excerpt { color: var(--ink-soft); font-size: 0.98rem; max-width: 62ch; margin: 0; }
+.post-card .meta { font-size: 0.82rem; color: var(--ink-soft); margin-top: 14px; }
+.post-card .arrow {
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+color: var(--gold);
+margin-top: 16px;
+}
 
-  @media (max-width: 900px) {
-    nav.links { display: none; }
-    .post-grid { grid-template-columns: 1fr; }
-  }
+@media (max-width: 900px) {
+nav.links { display: none; }
+.post-grid { grid-template-columns: 1fr; }
+}
 
-  footer {
-    background: var(--navy-deep);
-    color: #9BA5BC;
-    padding: 56px 0 32px;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(184, 150, 79, 0.25);
-  }
-  footer .foot-row {
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;
-    padding-bottom: 32px; border-bottom: 1px solid rgba(184, 150, 79, 0.2); margin-bottom: 24px;
-  }
-  footer .foot-logo { font-family: 'Fraunces', serif; color: #FFFFFF; font-size: 1.3rem; }
-  footer a { color: #C9D0DE; text-decoration: none; }
-  footer a:hover { color: var(--gold-soft); }
-  footer .foot-links { display: flex; gap: 28px; flex-wrap: wrap; }
-  footer .foot-social {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-top: 18px;
-  }
-  footer .foot-social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid rgba(184, 150, 79, 0.35);
-    border-radius: 50%;
-    color: #C9D0DE;
-    transition: color 0.15s, border-color 0.15s, background 0.15s;
-  }
-  footer .foot-social a:hover {
-    color: #10182B;
-    background: #D8C08F;
-    border-color: #D8C08F;
-  }
-  footer .foot-social svg { width: 16px; height: 16px; fill: currentColor; }
+footer {
+background: var(--navy-deep);
+color: #9BA5BC;
+padding: 56px 0 32px;
+font-size: 0.9rem;
+border-top: 1px solid rgba(184, 150, 79, 0.25);
+}
+footer .foot-row {
+display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+padding-bottom: 32px; border-bottom: 1px solid rgba(184, 150, 79, 0.2); margin-bottom: 24px;
+}
+footer .foot-logo { font-family: 'Fraunces', serif; color: #FFFFFF; font-size: 1.3rem; }
+footer a { color: #C9D0DE; text-decoration: none; }
+footer a:hover { color: var(--gold-soft); }
+footer .foot-links { display: flex; gap: 28px; flex-wrap: wrap; }
+footer .foot-social {
+display: flex;
+gap: 16px;
+align-items: center;
+margin-top: 18px;
+}
+footer .foot-social a {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+border: 1px solid rgba(184, 150, 79, 0.35);
+border-radius: 50%;
+color: #C9D0DE;
+transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+footer .foot-social a:hover {
+color: #10182B;
+background: #D8C08F;
+border-color: #D8C08F;
+}
+footer .foot-social svg { width: 16px; height: 16px; fill: currentColor; }
 
-  footer .copyright { font-size: 0.82rem; color: #7C8598; }
+footer .copyright { font-size: 0.82rem; color: #7C8598; }
 
-  @media (max-width: 900px) {
-    nav.links { display: none; }
-    .post-card { grid-template-columns: 1fr; }
-    .post-card .arrow { display: none; }
-  }
-  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 900px) {
+nav.links { display: none; }
+.post-card { grid-template-columns: 1fr; }
+.post-card .arrow { display: none; }
+}
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 </style>
 </head>
 <body>
 
 <header class="site-nav">
-  <div class="nav-row">
-    <a href="/" class="logo" aria-label="Verity Travel home">
-      <svg width="20" height="14" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M2 14C6 6 10 6 14 14C18 22 22 22 26 14C30 6 34 6 38 14" stroke="#B8964F" stroke-width="2.4" stroke-linecap="round"/>
-      </svg>
-      Verity
-    </a>
-    <nav class="links" aria-label="Primary">
-      <a href="/#services">Services</a>
-      <a href="/#approach">How It Works</a>
-      <a href="/blog/">Journal</a>
-      <a href="/#reviews">Reviews</a>
-      <a href="/#contact" class="btn btn-primary">Start a Trip Inquiry</a>
-    </nav>
-  </div>
+<div class="nav-row">
+<a href="/" class="logo" aria-label="Verity Travel home">
+<svg width="20" height="14" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M2 14C6 6 10 6 14 14C18 22 22 22 26 14C30 6 34 6 38 14" stroke="#B8964F" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+Verity
+</a>
+<nav class="links" aria-label="Primary">
+<a href="/#services">Services</a>
+<a href="/#approach">How It Works</a>
+<a href="/blog/">Journal</a>
+<a href="/#reviews">Reviews</a>
+<a href="/#contact" class="btn btn-primary">Start a Trip Inquiry</a>
+</nav>
+</div>
 </header>
 
 <main>
-  <section class="journal-hero">
-    <div class="wrap">
-      <p class="eyebrow">The Verity Journal</p>
-      <h1>Field notes for better trips.</h1>
-      <p>Cabin tiers worth paying for, perks that don't show up on a booking screen, and what a good
-        advisor actually does with your itinerary. Written from the desk, not a content farm.</p>
-    </div>
-  </section>
+<section class="journal-hero">
+<div class="wrap">
+<p class="eyebrow">The Verity Journal</p>
+<h1>Field notes for better trips.</h1>
+<p>Cabin tiers worth paying for, perks that don't show up on a booking screen, and what a good
+advisor actually does with your itinerary. Written from the desk, not a content farm.</p>
+</div>
+</section>
 
-  <div class="wrap">
-    <div class="post-grid">
-      <a href="/blog/why-book-with-a-travel-advisor" class="post-card">
-        <div>
-          <div class="cat">Booking &amp; Perks</div>
-          <h2>Why Book Your Cruise with a Travel Advisor?</h2>
-          <p class="excerpt">Hint: it costs the exact same. Here's what actually changes when you book
-            through an advisor instead of clicking "book now" — across Virgin Voyages, Royal Caribbean,
-            and Celebrity Cruises.</p>
-          <p class="meta">6 min read &middot; Booking &amp; Perks</p>
-        </div>
-        <div class="arrow">&rarr;</div>
-      </a>
+<div class="wrap">
+<div class="post-grid">
+<a href="/blog/best-time-to-book-alaska-cruise" class="post-card">
+<div>
+<div class="cat">Destination Guides</div>
+<h2>Best Time to Book a Royal Caribbean Alaska Cruise</h2>
+<p class="excerpt">Alaska has a real season, not just good and bad weather. Here's how timing
+affects pricing, wildlife viewing, and which glacier-view cabins sell out first.</p>
+<p class="meta">5 min read &middot; Destination Guides</p>
+</div>
+<div class="arrow">&rarr;</div>
+</a>
 
-      <a href="/blog/scandinavia-and-russia-what-surprised-me" class="post-card">
-        <div>
-          <div class="cat">From the Desk</div>
-          <h2>A Scandinavia &amp; Russia Cruise: What Actually Surprised Me</h2>
-          <p class="excerpt">Midnight light in Stockholm, the best reindeer I've ever eaten, and what
-            this itinerary is actually built for — notes from a real Royal Caribbean sailing.</p>
-          <p class="meta">5 min read &middot; From the Desk</p>
-        </div>
-        <div class="arrow">&rarr;</div>
-      </a>
+<a href="/blog/why-book-with-a-travel-advisor" class="post-card">
+<div>
+<div class="cat">Booking &amp; Perks</div>
+<h2>Why Book Your Cruise with a Travel Advisor?</h2>
+<p class="excerpt">Hint: it costs the exact same. Here's what actually changes when you book
+through an advisor instead of clicking "book now" — across Virgin Voyages, Royal Caribbean,
+and Celebrity Cruises.</p>
+<p class="meta">6 min read &middot; Booking &amp; Perks</p>
+</div>
+<div class="arrow">&rarr;</div>
+</a>
 
-      <a href="/blog/what-travel-insurance-actually-covers" class="post-card">
-        <div>
-          <div class="cat">Trip Protection</div>
-          <h2>What Travel Insurance Actually Covers (And Why It's Worth the Add)</h2>
-          <p class="excerpt">The missed connections, sudden illnesses, and lost bags that actually
-            happen — and what a solid policy is built to handle when they do.</p>
-          <p class="meta">4 min read &middot; Planning &amp; Protection</p>
-        </div>
-        <div class="arrow">&rarr;</div>
-      </a>
-    </div>
-  </div>
+<a href="/blog/scandinavia-and-russia-what-surprised-me" class="post-card">
+<div>
+<div class="cat">From the Desk</div>
+<h2>A Scandinavia &amp; Russia Cruise: What Actually Surprised Me</h2>
+<p class="excerpt">Midnight light in Stockholm, the best reindeer I've ever eaten, and what
+this itinerary is actually built for — notes from a real Royal Caribbean sailing.</p>
+<p class="meta">5 min read &middot; From the Desk</p>
+</div>
+<div class="arrow">&rarr;</div>
+</a>
+
+<a href="/blog/what-travel-insurance-actually-covers" class="post-card">
+<div>
+<div class="cat">Trip Protection</div>
+<h2>What Travel Insurance Actually Covers (And Why It's Worth the Add)</h2>
+<p class="excerpt">The missed connections, sudden illnesses, and lost bags that actually
+happen — and what a solid policy is built to handle when they do.</p>
+<p class="meta">4 min read &middot; Planning &amp; Protection</p>
+</div>
+<div class="arrow">&rarr;</div>
+</a>
+</div>
+</div>
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="foot-row">
-      <div>
-        <div class="foot-logo">Verity</div>
-        <p style="max-width:32ch; margin-top:10px; color:#9BA5BC;">Travel, thoughtfully planned.</p>
-      </div>
-      <div class="foot-links">
-        <a href="/#services">Services</a>
-        <a href="/#approach">How It Works</a>
-        <a href="/blog/">Journal</a>
-        <a href="/#reviews">Reviews</a>
-        <a href="mailto:hello@veritytravels.com">Email Us</a>
-      </div>
-    </div>
-    <p class="copyright">&copy; 2026 Verity Travel. A Fora Travel advisory. All trips booked in partnership with Fora.</p>
-  </div>
+<div class="wrap">
+<div class="foot-row">
+<div>
+<div class="foot-logo">Verity</div>
+<p style="max-width:32ch; margin-top:10px; color:#9BA5BC;">Travel, thoughtfully planned.</p>
+</div>
+<div class="foot-links">
+<a href="/#services">Services</a>
+<a href="/#approach">How It Works</a>
+<a href="/blog/">Journal</a>
+<a href="/#reviews">Reviews</a>
+<a href="mailto:hello@veritytravels.com">Email Us</a>
+</div>
+</div>
+<p class="copyright">&copy; 2026 Verity Travel. A Fora Travel advisory. All trips booked in partnership with Fora.</p>
+</div>
 </footer>
 
 </body>
