@@ -10,1074 +10,1163 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "name": "Verity Travel",
-  "description": "Boutique travel advisory specializing in cruises, hotel stays, executive travel and group celebrations.",
-  "areaServed": "US",
-  "priceRange": "$$-$$$$"
+"@context": "https://schema.org",
+"@type": "TravelAgency",
+"name": "Verity Travel",
+"description": "Boutique travel advisory specializing in cruises, hotel stays, executive travel and group celebrations.",
+"areaServed": "US",
+"priceRange": "$$-$$$$"
 }
 </script>
 <style>
-  :root {
-    --navy: #1B2A4A;
-    --navy-deep: #10182B;
-    --gold: #B8964F;
-    --gold-soft: #D8C08F;
-    --cream: #EFE6D3;
-    --paper: #FFFFFF;
-    --ink: #2B2A28;
-    --ink-soft: #6B6558;
-    --line: #CBB98D;
-  }
+:root {
+--navy: #1B2A4A;
+--navy-deep: #10182B;
+--gold: #B8964F;
+--gold-soft: #D8C08F;
+--cream: #EFE6D3;
+--paper: #FFFFFF;
+--ink: #2B2A28;
+--ink-soft: #6B6558;
+--line: #CBB98D;
+}
 
-  * { box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
-  body {
-    margin: 0;
-    background: var(--cream);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+margin: 0;
+background: var(--cream);
+color: var(--ink);
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+}
 
-  h1, h2, h3, .display {
-    font-family: 'Fraunces', serif;
-    color: var(--navy);
-    font-weight: 500;
-    line-height: 1.15;
-    margin: 0;
-  }
+h1, h2, h3, .display {
+font-family: 'Fraunces', serif;
+color: var(--navy);
+font-weight: 500;
+line-height: 1.15;
+margin: 0;
+}
 
-  a { color: inherit; }
+a { color: inherit; }
 
-  .eyebrow {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-  }
+.eyebrow {
+font-family: 'Inter', sans-serif;
+font-size: 0.78rem;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: var(--gold);
+font-weight: 600;
+}
 
-  .wrap {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
+.wrap {
+max-width: 1120px;
+margin: 0 auto;
+padding: 0 32px;
+}
 
-  /* ---------- Nav ---------- */
-  header.site-nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(244, 239, 230, 0.92);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 32px;
-    max-width: 1120px;
-    margin: 0 auto;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: 'Fraunces', serif;
-    font-size: 1.4rem;
-    color: var(--navy);
-    text-decoration: none;
-  }
-  .logo svg { flex-shrink: 0; }
-  nav.links {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    font-size: 0.92rem;
-  }
-  nav.links a {
-    text-decoration: none;
-    color: var(--ink);
-  }
-  nav.links a:hover { color: var(--gold); }
-  .btn {
-    display: inline-block;
-    padding: 12px 26px;
-    border-radius: 2px;
-    font-size: 0.88rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    text-align: center;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .btn-primary {
-    background: var(--navy);
-    color: var(--paper);
-  }
-  .btn-primary:hover { background: var(--navy-deep); }
-  .btn-ghost {
-    border: 1px solid var(--navy);
-    color: var(--navy);
-  }
-  .btn-ghost:hover { background: var(--navy); color: var(--paper); }
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.6rem;
-    color: var(--navy);
-    cursor: pointer;
-  }
+/* ---------- Nav ---------- */
+header.site-nav {
+position: sticky;
+top: 0;
+z-index: 50;
+background: rgba(244, 239, 230, 0.92);
+backdrop-filter: blur(6px);
+border-bottom: 1px solid var(--line);
+}
+.nav-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 18px 32px;
+max-width: 1120px;
+margin: 0 auto;
+}
+.logo {
+display: flex;
+align-items: center;
+gap: 8px;
+font-family: 'Fraunces', serif;
+font-size: 1.4rem;
+color: var(--navy);
+text-decoration: none;
+}
+.logo svg { flex-shrink: 0; }
+nav.links {
+display: flex;
+gap: 32px;
+align-items: center;
+font-size: 0.92rem;
+}
+nav.links a {
+text-decoration: none;
+color: var(--ink);
+}
+nav.links a:hover { color: var(--gold); }
+.btn {
+display: inline-block;
+padding: 12px 26px;
+border-radius: 2px;
+font-size: 0.88rem;
+font-weight: 600;
+letter-spacing: 0.03em;
+text-decoration: none;
+text-align: center;
+transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary {
+background: var(--navy);
+color: var(--paper);
+}
+.btn-primary:hover { background: var(--navy-deep); }
+.btn-ghost {
+border: 1px solid var(--navy);
+color: var(--navy);
+}
+.btn-ghost:hover { background: var(--navy); color: var(--paper); }
+.nav-toggle {
+display: none;
+background: none;
+border: none;
+font-size: 1.6rem;
+color: var(--navy);
+cursor: pointer;
+}
 
-  /* ---------- Hero ---------- */
-  .hero {
-    padding: 88px 0 96px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero .wrap {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 56px;
-    align-items: center;
-  }
-  .hero h1 {
-    font-size: clamp(2.4rem, 4.2vw, 3.6rem);
-    margin: 18px 0 22px;
-  }
-  .hero p.lede {
-    font-size: 1.14rem;
-    color: var(--ink-soft);
-    max-width: 46ch;
-    margin-bottom: 34px;
-  }
-  .hero .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+/* ---------- Hero ---------- */
+.hero {
+padding: 88px 0 96px;
+position: relative;
+overflow: hidden;
+}
+.hero .wrap {
+display: grid;
+grid-template-columns: 1.05fr 0.95fr;
+gap: 56px;
+align-items: center;
+}
+.hero h1 {
+font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+margin: 18px 0 22px;
+}
+.hero p.lede {
+font-size: 1.14rem;
+color: var(--ink-soft);
+max-width: 46ch;
+margin-bottom: 34px;
+}
+.hero .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
 
-  /* Stamp / postcard cluster — signature visual, no photography */
-  .card-cluster {
-    position: relative;
-    height: 420px;
-  }
-  .postcard {
-    position: absolute;
-    background: var(--paper);
-    border-radius: 3px;
-    box-shadow: 0 22px 50px rgba(27, 42, 74, 0.3);
-    border: 1px solid var(--line);
-    overflow: hidden;
-  }
-  .postcard.pc1 {
-    width: 280px;
-    top: 10px;
-    left: 20px;
-    transform: rotate(-6deg);
-  }
-  .postcard.pc2 {
-    width: 240px;
-    top: 200px;
-    left: 130px;
-    transform: rotate(4deg);
-    z-index: 2;
-  }
-  .postcard .pc-photo {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    display: block;
-  }
-  .postcard.pc2 .pc-photo { height: 120px; }
-  .postcard .pc-caption { padding: 16px 18px 18px; }
-  .postcard .wave {
-    font-size: 1.1rem;
-    color: var(--gold);
-    margin-bottom: 6px;
-    display: block;
-  }
-  .postcard .pc-title {
-    font-family: 'Fraunces', serif;
-    color: var(--navy);
-    font-size: 1.05rem;
-    margin-bottom: 4px;
-  }
-  .postcard .pc-sub {
-    font-size: 0.82rem;
-    color: var(--ink-soft);
-  }
-  .stamp {
-    position: absolute;
-    top: 24px;
-    right: 8px;
-    width: 74px;
-    height: 74px;
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(12deg);
-    font-family: 'Caveat', cursive;
-    font-size: 0.95rem;
-    color: var(--gold);
-    text-align: center;
-    line-height: 1.1;
-  }
-  .marginalia {
-    position: absolute;
-    bottom: 4px;
-    right: 30px;
-    font-family: 'Caveat', cursive;
-    font-size: 1.3rem;
-    color: var(--navy);
-    transform: rotate(-3deg);
-    max-width: 220px;
-  }
+/* Stamp / postcard cluster — signature visual, no photography */
+.card-cluster {
+position: relative;
+height: 420px;
+}
+.postcard {
+position: absolute;
+background: var(--paper);
+border-radius: 3px;
+box-shadow: 0 22px 50px rgba(27, 42, 74, 0.3);
+border: 1px solid var(--line);
+overflow: hidden;
+}
+.postcard.pc1 {
+width: 280px;
+top: 10px;
+left: 20px;
+transform: rotate(-6deg);
+}
+.postcard.pc2 {
+width: 240px;
+top: 200px;
+left: 130px;
+transform: rotate(4deg);
+z-index: 2;
+}
+.postcard .pc-photo {
+width: 100%;
+height: 140px;
+object-fit: cover;
+display: block;
+}
+.postcard.pc2 .pc-photo { height: 120px; }
+.postcard .pc-caption { padding: 16px 18px 18px; }
+.postcard .wave {
+font-size: 1.1rem;
+color: var(--gold);
+margin-bottom: 6px;
+display: block;
+}
+.postcard .pc-title {
+font-family: 'Fraunces', serif;
+color: var(--navy);
+font-size: 1.05rem;
+margin-bottom: 4px;
+}
+.postcard .pc-sub {
+font-size: 0.82rem;
+color: var(--ink-soft);
+}
+.stamp {
+position: absolute;
+top: 24px;
+right: 8px;
+width: 74px;
+height: 74px;
+border: 2px solid var(--gold);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(12deg);
+font-family: 'Caveat', cursive;
+font-size: 0.95rem;
+color: var(--gold);
+text-align: center;
+line-height: 1.1;
+}
+.marginalia {
+position: absolute;
+bottom: 4px;
+right: 30px;
+font-family: 'Caveat', cursive;
+font-size: 1.3rem;
+color: var(--navy);
+transform: rotate(-3deg);
+max-width: 220px;
+}
 
-  /* ---------- Trust bar ---------- */
-  .trust-bar {
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: var(--paper);
-  }
-  .trust-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 36px 0;
-  }
-  .trust-item { text-align: center; }
-  .trust-item .t-num {
-    font-family: 'Fraunces', serif;
-    color: var(--gold);
-    font-size: 1.05rem;
-    margin-bottom: 4px;
-  }
-  .trust-item .t-label {
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-  }
+/* ---------- Trust bar ---------- */
+.trust-bar {
+border-top: 1px solid var(--line);
+border-bottom: 1px solid var(--line);
+background: var(--paper);
+}
+.trust-row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+padding: 36px 0;
+}
+.trust-item { text-align: center; }
+.trust-item .t-num {
+font-family: 'Fraunces', serif;
+color: var(--gold);
+font-size: 1.05rem;
+margin-bottom: 4px;
+}
+.trust-item .t-label {
+font-size: 0.9rem;
+color: var(--ink-soft);
+}
 
-  /* ---------- Credentials ---------- */
-  .credentials { background: var(--paper); border-bottom: 1px solid var(--line); }
-  .credentials .section-head { margin-bottom: 36px; }
-  .cred-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .cred-card {
-    background: var(--cream);
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    padding: 24px;
-    text-align: center;
-  }
-  .cred-card img {
-    max-width: 100%;
-    height: 46px;
-    object-fit: contain;
-    margin-bottom: 14px;
-  }
-  .cred-card .cred-label {
-    font-size: 0.86rem;
-    color: var(--ink-soft);
-  }
+/* ---------- Credentials ---------- */
+.credentials { background: var(--paper); border-bottom: 1px solid var(--line); }
+.credentials .section-head { margin-bottom: 36px; }
+.cred-row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+.cred-card {
+background: var(--cream);
+border: 1px solid var(--line);
+border-radius: 3px;
+padding: 24px;
+text-align: center;
+}
+.cred-card img {
+max-width: 100%;
+height: 46px;
+object-fit: contain;
+margin-bottom: 14px;
+}
+.cred-card .cred-label {
+font-size: 0.86rem;
+color: var(--ink-soft);
+}
 
-  /* ---------- Section shared ---------- */
-  section { padding: 96px 0; }
-  .section-head {
-    max-width: 640px;
-    margin-bottom: 52px;
-  }
-  .section-head h2 {
-    font-size: clamp(1.9rem, 3vw, 2.5rem);
-    margin-top: 10px;
-  }
-  .section-head p {
-    color: var(--ink-soft);
-    margin-top: 16px;
-    font-size: 1.02rem;
-  }
+/* ---------- Section shared ---------- */
+section { padding: 96px 0; }
+.section-head {
+max-width: 640px;
+margin-bottom: 52px;
+}
+.section-head h2 {
+font-size: clamp(1.9rem, 3vw, 2.5rem);
+margin-top: 10px;
+}
+.section-head p {
+color: var(--ink-soft);
+margin-top: 16px;
+font-size: 1.02rem;
+}
 
-  /* ---------- Services ---------- */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .service-card {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-top: 2px solid var(--gold);
-    border-radius: 3px;
-    padding: 30px 24px;
-    box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
-  }
-  .service-card .wave { color: var(--gold); font-size: 1.2rem; }
-  .service-card h3 {
-    font-size: 1.18rem;
-    margin: 14px 0 10px;
-  }
-  .service-card p {
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-    margin: 0;
-  }
+/* ---------- Services ---------- */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+.service-card {
+background: var(--paper);
+border: 1px solid var(--line);
+border-top: 2px solid var(--gold);
+border-radius: 3px;
+padding: 30px 24px;
+box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
+}
+.service-card .wave { color: var(--gold); font-size: 1.2rem; }
+.service-card h3 {
+font-size: 1.18rem;
+margin: 14px 0 10px;
+}
+.service-card p {
+font-size: 0.92rem;
+color: var(--ink-soft);
+margin: 0;
+}
 
-  /* ---------- Approach / process ---------- */
-  .approach {
-    background: var(--navy);
-    color: var(--paper);
-  }
-  .approach .section-head h2 { color: var(--paper); }
-  .approach .section-head p { color: #C9D0DE; }
-  .approach .eyebrow { color: var(--gold-soft); }
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-  .step .seal {
-    width: 58px;
-    height: 58px;
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fraunces', serif;
-    color: var(--gold);
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  .step h3 {
-    color: var(--paper);
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-  }
-  .step p {
-    color: #C9D0DE;
-    font-size: 0.94rem;
-    margin: 0;
-  }
+/* ---------- Approach / process ---------- */
+.approach {
+background: var(--navy);
+color: var(--paper);
+}
+.approach .section-head h2 { color: var(--paper); }
+.approach .section-head p { color: #C9D0DE; }
+.approach .eyebrow { color: var(--gold-soft); }
+.steps {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 40px;
+}
+.step .seal {
+width: 58px;
+height: 58px;
+border: 2px solid var(--gold);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Fraunces', serif;
+color: var(--gold);
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+.step h3 {
+color: var(--paper);
+font-size: 1.15rem;
+margin-bottom: 10px;
+}
+.step p {
+color: #C9D0DE;
+font-size: 0.94rem;
+margin: 0;
+}
 
-  /* ---------- Why an advisor (SEO content block) ---------- */
-  .why-advisor {
-    background: var(--paper);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .why-advisor .wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: start;
-  }
-  .why-advisor .copy p { color: var(--ink-soft); margin: 16px 0; }
-  .why-list { list-style: none; padding: 0; margin: 24px 0; }
-  .why-list li {
-    display: flex;
-    gap: 14px;
-    padding: 16px 0;
-    border-top: 1px solid var(--line);
-  }
-  .why-list li:last-child { border-bottom: 1px solid var(--line); }
-  .why-list .wave { color: var(--gold); flex-shrink: 0; }
-  .why-list strong { color: var(--navy); display: block; margin-bottom: 3px; font-family: 'Fraunces', serif; font-weight: 500; }
-  .why-list span.desc { font-size: 0.92rem; color: var(--ink-soft); }
-  .read-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--navy);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 2px;
-  }
+/* ---------- Why an advisor (SEO content block) ---------- */
+.why-advisor {
+background: var(--paper);
+border-top: 1px solid var(--line);
+border-bottom: 1px solid var(--line);
+}
+.why-advisor .wrap {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 64px;
+align-items: start;
+}
+.why-advisor .copy p { color: var(--ink-soft); margin: 16px 0; }
+.why-list { list-style: none; padding: 0; margin: 24px 0; }
+.why-list li {
+display: flex;
+gap: 14px;
+padding: 16px 0;
+border-top: 1px solid var(--line);
+}
+.why-list li:last-child { border-bottom: 1px solid var(--line); }
+.why-list .wave { color: var(--gold); flex-shrink: 0; }
+.why-list strong { color: var(--navy); display: block; margin-bottom: 3px; font-family: 'Fraunces', serif; font-weight: 500; }
+.why-list span.desc { font-size: 0.92rem; color: var(--ink-soft); }
+.read-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+color: var(--navy);
+font-weight: 600;
+text-decoration: none;
+border-bottom: 1px solid var(--gold);
+padding-bottom: 2px;
+}
 
-  /* ---------- Testimonials (no photos, no full names) ---------- */
-  .testimonials { background: var(--cream); }
-  .quote-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .quote-card {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-top: 2px solid var(--gold);
-    padding: 30px 26px;
-    border-radius: 3px;
-    box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
-  }
-  .quote-card p.q {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    color: var(--navy);
-    font-size: 1.05rem;
-    margin: 0 0 18px;
-  }
-  .quote-card .attrib {
-    font-size: 0.84rem;
-    color: var(--gold);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+/* ---------- Testimonials (no photos, no full names) ---------- */
+.testimonials { background: var(--cream); }
+.quote-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+.quote-card {
+background: var(--paper);
+border: 1px solid var(--line);
+border-top: 2px solid var(--gold);
+padding: 30px 26px;
+border-radius: 3px;
+box-shadow: 0 10px 26px rgba(27, 42, 74, 0.13);
+}
+.quote-card p.q {
+font-family: 'Fraunces', serif;
+font-style: italic;
+color: var(--navy);
+font-size: 1.05rem;
+margin: 0 0 18px;
+}
+.quote-card .attrib {
+font-size: 0.84rem;
+color: var(--gold);
+letter-spacing: 0.04em;
+text-transform: uppercase;
+font-weight: 600;
+}
 
-  /* ---------- CTA ---------- */
-  .cta-section {
-    background: var(--navy-deep);
-    color: var(--paper);
-    text-align: center;
-  }
-  .cta-section h2 { color: var(--paper); font-size: clamp(2rem, 3.4vw, 2.7rem); }
-  .cta-section p {
-    color: #C9D0DE;
-    max-width: 48ch;
-    margin: 18px auto 34px;
-  }
+/* ---------- CTA ---------- */
+.cta-section {
+background: var(--navy-deep);
+color: var(--paper);
+text-align: center;
+}
+.cta-section h2 { color: var(--paper); font-size: clamp(2rem, 3.4vw, 2.7rem); }
+.cta-section p {
+color: #C9D0DE;
+max-width: 48ch;
+margin: 18px auto 34px;
+}
 
-  /* ---------- Inquiry form ---------- */
-  .inquiry-form {
-    background: var(--paper);
-    border-radius: 4px;
-    padding: 44px;
-    text-align: left;
-    max-width: 720px;
-    margin: 0 auto;
-    box-shadow: 0 24px 60px rgba(0,0,0,0.25);
-  }
-  .form-row { margin-bottom: 20px; }
-  .form-row.two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .inquiry-form label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--navy);
-    margin-bottom: 7px;
-  }
-  .inquiry-form label .opt {
-    font-weight: 400;
-    color: var(--ink-soft);
-    font-size: 0.8rem;
-  }
-  .inquiry-form input[type="text"],
-  .inquiry-form input[type="email"],
-  .inquiry-form input[type="tel"],
-  .inquiry-form textarea,
-  .inquiry-form select {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    color: var(--ink);
-    background: var(--cream);
-  }
-  .inquiry-form textarea { min-height: 90px; resize: vertical; }
-  .choice-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .choice-group label {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    font-weight: 400;
-    font-size: 0.88rem;
-    color: var(--ink);
-    background: var(--cream);
-    border: 1px solid var(--line);
-    padding: 9px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 0;
-  }
-  .choice-group input { accent-color: var(--navy); }
-  .form-submit {
-    width: 100%;
-    background: var(--navy);
-    color: var(--paper);
-    border: none;
-    padding: 15px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 8px;
-  }
-  .form-submit:hover { background: var(--navy-deep); }
-  .form-note {
-    font-size: 0.82rem;
-    color: var(--ink-soft);
-    margin-top: 14px;
-    text-align: center;
-  }
-  .form-status {
-    display: none;
-    margin-top: 16px;
-    padding: 14px 16px;
-    border-radius: 3px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .form-status.success { background: #E7F0E5; color: #2C4A28; }
-  .form-status.error { background: #F5E4E0; color: #7A2F20; }
+/* ---------- Inquiry form ---------- */
+.inquiry-form {
+background: var(--paper);
+border-radius: 4px;
+padding: 44px;
+text-align: left;
+max-width: 720px;
+margin: 0 auto;
+box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+}
+.form-row { margin-bottom: 20px; }
+.form-row.two-col {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+.inquiry-form label {
+display: block;
+font-size: 0.85rem;
+font-weight: 600;
+color: var(--navy);
+margin-bottom: 7px;
+}
+.inquiry-form label .opt {
+font-weight: 400;
+color: var(--ink-soft);
+font-size: 0.8rem;
+}
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form input[type="tel"],
+.inquiry-form textarea,
+.inquiry-form select {
+width: 100%;
+padding: 12px 14px;
+border: 1px solid var(--line);
+border-radius: 3px;
+font-family: 'Inter', sans-serif;
+font-size: 0.95rem;
+color: var(--ink);
+background: var(--cream);
+}
+.inquiry-form textarea { min-height: 90px; resize: vertical; }
+.choice-group {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+.choice-group label {
+display: flex;
+align-items: center;
+gap: 7px;
+font-weight: 400;
+font-size: 0.88rem;
+color: var(--ink);
+background: var(--cream);
+border: 1px solid var(--line);
+padding: 9px 14px;
+border-radius: 20px;
+cursor: pointer;
+margin-bottom: 0;
+}
+.choice-group input { accent-color: var(--navy); }
+.form-submit {
+width: 100%;
+background: var(--navy);
+color: var(--paper);
+border: none;
+padding: 15px;
+font-size: 0.95rem;
+font-weight: 600;
+letter-spacing: 0.03em;
+border-radius: 3px;
+cursor: pointer;
+margin-top: 8px;
+}
+.form-submit:hover { background: var(--navy-deep); }
+.form-note {
+font-size: 0.82rem;
+color: var(--ink-soft);
+margin-top: 14px;
+text-align: center;
+}
+.form-status {
+display: none;
+margin-top: 16px;
+padding: 14px 16px;
+border-radius: 3px;
+font-size: 0.9rem;
+text-align: center;
+}
+.form-status.success { background: #E7F0E5; color: #2C4A28; }
+.form-status.error { background: #F5E4E0; color: #7A2F20; }
 
-  @media (max-width: 700px) {
-    .inquiry-form { padding: 28px 22px; }
-    .form-row.two-col { grid-template-columns: 1fr; }
-  }
+@media (max-width: 700px) {
+.inquiry-form { padding: 28px 22px; }
+.form-row.two-col { grid-template-columns: 1fr; }
+}
 
-  /* ---------- Footer ---------- */
-  footer {
-    background: var(--navy-deep);
-    color: #9BA5BC;
-    padding: 56px 0 32px;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(184, 150, 79, 0.25);
-  }
-  footer .foot-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid rgba(184, 150, 79, 0.2);
-    margin-bottom: 24px;
-  }
-  footer .foot-logo {
-    font-family: 'Fraunces', serif;
-    color: var(--paper);
-    font-size: 1.3rem;
-  }
-  footer a { color: #C9D0DE; text-decoration: none; }
-  footer a:hover { color: var(--gold-soft); }
-  footer .foot-links { display: flex; gap: 28px; flex-wrap: wrap; }
-  footer .foot-social {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-top: 18px;
-  }
-  footer .foot-social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid rgba(184, 150, 79, 0.35);
-    border-radius: 50%;
-    color: #C9D0DE;
-    transition: color 0.15s, border-color 0.15s, background 0.15s;
-  }
-  footer .foot-social a:hover {
-    color: var(--navy-deep);
-    background: var(--gold-soft);
-    border-color: var(--gold-soft);
-  }
-  footer .foot-social svg { width: 16px; height: 16px; fill: currentColor; }
-  footer .copyright { font-size: 0.82rem; color: #7C8598; }
+/* ---------- Lead magnet / checklist signup ---------- */
+.lead-magnet {
+background: var(--cream);
+border-top: 1px solid var(--line);
+border-bottom: 1px solid var(--line);
+}
+.lead-magnet-inner {
+max-width: 640px;
+margin: 0 auto;
+text-align: center;
+}
+.lead-magnet-inner .eyebrow { display: block; margin-bottom: 10px; }
+.lead-magnet-inner h2 { font-size: clamp(1.7rem, 2.6vw, 2.2rem); }
+.lead-magnet-inner > p:not(.eyebrow) { color: var(--ink-soft); margin: 16px 0 28px; }
+.checklist-form {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.checklist-form input[type="email"] {
+flex: 1 1 260px;
+padding: 13px 16px;
+border: 1px solid var(--line);
+border-radius: 3px;
+font-family: 'Inter', sans-serif;
+font-size: 0.95rem;
+background: var(--paper);
+color: var(--ink);
+}
+.checklist-status {
+font-size: 0.9rem;
+font-weight: 600;
+color: var(--navy);
+min-height: 1.2rem;
+margin-top: 16px;
+}
+.lead-magnet .form-note { margin-top: 10px; }
 
-  /* ---------- Responsive ---------- */
-  @media (max-width: 900px) {
-    nav.links { display: none; }
-    .nav-toggle { display: block; }
-    .hero .wrap { grid-template-columns: 1fr; }
-    .card-cluster { height: 320px; margin-top: 10px; }
-    .services-grid { grid-template-columns: 1fr 1fr; }
-    .steps { grid-template-columns: 1fr; gap: 32px; }
-    .why-advisor .wrap { grid-template-columns: 1fr; gap: 32px; }
-    .quote-grid { grid-template-columns: 1fr; }
-    .trust-row { grid-template-columns: 1fr; gap: 20px; }
-  }
-  @media (max-width: 560px) {
-    .services-grid { grid-template-columns: 1fr; }
-    .wrap { padding: 0 20px; }
-    .nav-row { padding: 16px 20px; }
-  }
+@media (max-width: 560px) {
+.checklist-form { flex-direction: column; }
+}
 
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-  }
+/* ---------- Footer ---------- */
+footer {
+background: var(--navy-deep);
+color: #9BA5BC;
+padding: 56px 0 32px;
+font-size: 0.9rem;
+border-top: 1px solid rgba(184, 150, 79, 0.25);
+}
+footer .foot-row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 24px;
+padding-bottom: 32px;
+border-bottom: 1px solid rgba(184, 150, 79, 0.2);
+margin-bottom: 24px;
+}
+footer .foot-logo {
+font-family: 'Fraunces', serif;
+color: var(--paper);
+font-size: 1.3rem;
+}
+footer a { color: #C9D0DE; text-decoration: none; }
+footer a:hover { color: var(--gold-soft); }
+footer .foot-links { display: flex; gap: 28px; flex-wrap: wrap; }
+footer .foot-social {
+display: flex;
+gap: 16px;
+align-items: center;
+margin-top: 18px;
+}
+footer .foot-social a {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+border: 1px solid rgba(184, 150, 79, 0.35);
+border-radius: 50%;
+color: #C9D0DE;
+transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+footer .foot-social a:hover {
+color: var(--navy-deep);
+background: var(--gold-soft);
+border-color: var(--gold-soft);
+}
+footer .foot-social svg { width: 16px; height: 16px; fill: currentColor; }
+footer .copyright { font-size: 0.82rem; color: #7C8598; }
 
-  :focus-visible {
-    outline: 2px solid var(--gold);
-    outline-offset: 3px;
-  }
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+nav.links { display: none; }
+.nav-toggle { display: block; }
+.hero .wrap { grid-template-columns: 1fr; }
+.card-cluster { height: 320px; margin-top: 10px; }
+.services-grid { grid-template-columns: 1fr 1fr; }
+.steps { grid-template-columns: 1fr; gap: 32px; }
+.why-advisor .wrap { grid-template-columns: 1fr; gap: 32px; }
+.quote-grid { grid-template-columns: 1fr; }
+.trust-row { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 560px) {
+.services-grid { grid-template-columns: 1fr; }
+.wrap { padding: 0 20px; }
+.nav-row { padding: 16px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+}
+
+:focus-visible {
+outline: 2px solid var(--gold);
+outline-offset: 3px;
+}
 </style>
 </head>
 <body>
 
 <header class="site-nav">
-  <div class="nav-row">
-    <a href="#top" class="logo" aria-label="Verity Travel home">
-      <svg width="20" height="14" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M2 14C6 6 10 6 14 14C18 22 22 22 26 14C30 6 34 6 38 14" stroke="#B8964F" stroke-width="2.4" stroke-linecap="round"/>
-      </svg>
-      Verity
-    </a>
-    <nav class="links" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#approach">How It Works</a>
-      <a href="#why">Why an Advisor</a>
-      <a href="/blog/">Journal</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact" class="btn btn-primary">Start a Trip Inquiry</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
-  </div>
+<div class="nav-row">
+<a href="#top" class="logo" aria-label="Verity Travel home">
+<svg width="20" height="14" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M2 14C6 6 10 6 14 14C18 22 22 22 26 14C30 6 34 6 38 14" stroke="#B8964F" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+Verity
+</a>
+<nav class="links" aria-label="Primary">
+<a href="#services">Services</a>
+<a href="#approach">How It Works</a>
+<a href="#why">Why an Advisor</a>
+<a href="/blog/">Journal</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact" class="btn btn-primary">Start a Trip Inquiry</a>
+</nav>
+<button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+</div>
 </header>
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <p class="eyebrow">Boutique Travel Advisory</p>
-        <h1>Travel, thoughtfully planned.</h1>
-        <p class="lede">Verity is a personal travel advisory for cruises, hotel stays, executive trips and group
-          celebrations — built on straight answers, real expertise, and a plan made around how you actually
-          want to travel. Same price as booking it yourself. A great deal more behind it.</p>
-        <div class="cta-row">
-          <a href="#contact" class="btn btn-primary">Start a Trip Inquiry</a>
-          <a href="#approach" class="btn btn-ghost">See How It Works</a>
-        </div>
-      </div>
-      <div class="card-cluster" aria-hidden="true">
-        <div class="postcard pc1">
-          <img class="pc-photo" src="https://images.unsplash.com/photo-1568282167464-cb0d811b05c2?w=800&q=80&auto=format&fit=crop" alt="" loading="lazy">
-          <div class="pc-caption">
-            <span class="wave">&#8767;</span>
-            <div class="pc-title">Amalfi Coast</div>
-            <div class="pc-sub">Private villa &amp; boat day</div>
-          </div>
-        </div>
-        <div class="postcard pc2">
-          <img class="pc-photo" src="https://images.unsplash.com/photo-1704746375104-2f9bae4a3fc7?w=800&q=80&auto=format&fit=crop" alt="" loading="lazy">
-          <div class="pc-caption">
-            <span class="wave">&#8767;</span>
-            <div class="pc-title">Alaska by Sea</div>
-            <div class="pc-sub">Suite-class, glacier route</div>
-          </div>
-        </div>
-        <div class="stamp">Verified<br>Itinerary</div>
-        <div class="marginalia">currently planning: Kyoto in spring</div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+<div class="wrap">
+<div>
+<p class="eyebrow">Boutique Travel Advisory</p>
+<h1>Travel, thoughtfully planned.</h1>
+<p class="lede">Verity is a personal travel advisory for cruises, hotel stays, executive trips and group
+celebrations — built on straight answers, real expertise, and a plan made around how you actually
+want to travel. Same price as booking it yourself. A great deal more behind it.</p>
+<div class="cta-row">
+<a href="#contact" class="btn btn-primary">Start a Trip Inquiry</a>
+<a href="#approach" class="btn btn-ghost">See How It Works</a>
+</div>
+</div>
+<div class="card-cluster" aria-hidden="true">
+<div class="postcard pc1">
+<img class="pc-photo" src="https://images.unsplash.com/photo-1568282167464-cb0d811b05c2?w=800&q=80&auto=format&fit=crop" alt="" loading="lazy">
+<div class="pc-caption">
+<span class="wave">&#8767;</span>
+<div class="pc-title">Amalfi Coast</div>
+<div class="pc-sub">Private villa &amp; boat day</div>
+</div>
+</div>
+<div class="postcard pc2">
+<img class="pc-photo" src="https://images.unsplash.com/photo-1704746375104-2f9bae4a3fc7?w=800&q=80&auto=format&fit=crop" alt="" loading="lazy">
+<div class="pc-caption">
+<span class="wave">&#8767;</span>
+<div class="pc-title">Alaska by Sea</div>
+<div class="pc-sub">Suite-class, glacier route</div>
+</div>
+</div>
+<div class="stamp">Verified<br>Itinerary</div>
+<div class="marginalia">currently planning: Kyoto in spring</div>
+</div>
+</div>
+</section>
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar">
-    <div class="wrap trust-row">
-      <div class="trust-item">
-        <div class="t-num">Same-Price Booking</div>
-        <div class="t-label">Advisor rates match direct booking, always</div>
-      </div>
-      <div class="trust-item">
-        <div class="t-num">One Point of Contact</div>
-        <div class="t-label">A real person on call, not a hold queue</div>
-      </div>
-      <div class="trust-item">
-        <div class="t-num">Cruise, Hotel &amp; Group Experts</div>
-        <div class="t-label">Deep familiarity with suite tiers &amp; deck plans</div>
-      </div>
-    </div>
-  </div>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+<div class="wrap trust-row">
+<div class="trust-item">
+<div class="t-num">Same-Price Booking</div>
+<div class="t-label">Advisor rates match direct booking, always</div>
+</div>
+<div class="trust-item">
+<div class="t-num">One Point of Contact</div>
+<div class="t-label">A real person on call, not a hold queue</div>
+</div>
+<div class="trust-item">
+<div class="t-num">Cruise, Hotel &amp; Group Experts</div>
+<div class="t-label">Deep familiarity with suite tiers &amp; deck plans</div>
+</div>
+</div>
+</div>
 
-  <!-- CREDENTIALS -->
-  <section class="credentials">
-    <div class="wrap">
-      <div class="section-head" style="margin-bottom:36px;">
-        <p class="eyebrow">Certified Expertise</p>
-        <h2 style="font-size:1.8rem;">Trained by the lines we book.</h2>
-      </div>
-      <div class="cred-row">
-        <div class="cred-card">
-          <img src="/assets/rcu-bachelor-of-adventure.png" alt="Royal Caribbean University — Bachelor of Adventure">
-          <div class="cred-label">Royal Caribbean University Graduate</div>
-        </div>
-        <div class="cred-card">
-          <img src="/assets/virgin-voyages-first-mate-violet.png" alt="Virgin Voyages — Certified First Mate, Violet Tier">
-          <div class="cred-label">Virgin Voyages Certified First Mate</div>
-        </div>
-        <div class="cred-card">
-          <div style="font-family:'Fraunces',serif; color:var(--navy); font-size:1.3rem; margin-bottom:14px;">Fora</div>
-          <div class="cred-label">Fora Certified Travel Advisor</div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- CREDENTIALS -->
+<section class="credentials">
+<div class="wrap">
+<div class="section-head" style="margin-bottom:36px;">
+<p class="eyebrow">Certified Expertise</p>
+<h2 style="font-size:1.8rem;">Trained by the lines we book.</h2>
+</div>
+<div class="cred-row">
+<div class="cred-card">
+<img src="/assets/rcu-bachelor-of-adventure.png" alt="Royal Caribbean University — Bachelor of Adventure">
+<div class="cred-label">Royal Caribbean University Graduate</div>
+</div>
+<div class="cred-card">
+<img src="/assets/virgin-voyages-first-mate-violet.png" alt="Virgin Voyages — Certified First Mate, Violet Tier">
+<div class="cred-label">Virgin Voyages Certified First Mate</div>
+</div>
+<div class="cred-card">
+<div style="font-family:'Fraunces',serif; color:var(--navy); font-size:1.3rem; margin-bottom:14px;">Fora</div>
+<div class="cred-label">Fora Certified Travel Advisor</div>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">What We Plan</p>
-        <h2>Every trip, one advisor.</h2>
-        <p>From a week at sea to a weekend conference, each itinerary gets the same level of care —
-          matched to how you actually like to travel.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="wave">&#8767;</span>
-          <h3>Cruises</h3>
-          <p>Suite-tier guidance across Virgin Voyages, Royal Caribbean, Celebrity and more — the right cabin,
-            not just an available one.</p>
-        </div>
-        <div class="service-card">
-          <span class="wave">&#8767;</span>
-          <h3>Hotels &amp; Resorts</h3>
-          <p>Vetted stays with the perks that don't show up on a booking screen — upgrades, credits, and
-            priority reservations.</p>
-        </div>
-        <div class="service-card">
-          <span class="wave">&#8767;</span>
-          <h3>Executive Travel</h3>
-          <p>Business trips and conferences planned around your schedule, with logistics handled quietly
-            in the background.</p>
-        </div>
-        <div class="service-card">
-          <span class="wave">&#8767;</span>
-          <h3>Groups &amp; Celebrations</h3>
-          <p>Milestone trips, family reunions and multi-room bookings coordinated as one seamless
-            itinerary, not a dozen separate ones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- SERVICES -->
+<section id="services">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">What We Plan</p>
+<h2>Every trip, one advisor.</h2>
+<p>From a week at sea to a weekend conference, each itinerary gets the same level of care —
+matched to how you actually like to travel.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<span class="wave">&#8767;</span>
+<h3>Cruises</h3>
+<p>Suite-tier guidance across Virgin Voyages, Royal Caribbean, Celebrity and more — the right cabin,
+not just an available one.</p>
+</div>
+<div class="service-card">
+<span class="wave">&#8767;</span>
+<h3>Hotels &amp; Resorts</h3>
+<p>Vetted stays with the perks that don't show up on a booking screen — upgrades, credits, and
+priority reservations.</p>
+</div>
+<div class="service-card">
+<span class="wave">&#8767;</span>
+<h3>Executive Travel</h3>
+<p>Business trips and conferences planned around your schedule, with logistics handled quietly
+in the background.</p>
+</div>
+<div class="service-card">
+<span class="wave">&#8767;</span>
+<h3>Groups &amp; Celebrations</h3>
+<p>Milestone trips, family reunions and multi-room bookings coordinated as one seamless
+itinerary, not a dozen separate ones.</p>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- APPROACH -->
-  <section id="approach" class="approach">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">The Verity Approach</p>
-        <h2>Three steps, start to departure.</h2>
-        <p>No call centers, no runaround — a straightforward process from first inquiry to the day you
-          leave.</p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="seal">I</div>
-          <h3>You Share the Vision</h3>
-          <p>A short inquiry tells us where you want to go, when, and what matters most — budget, pace,
-            privacy, celebration.</p>
-        </div>
-        <div class="step">
-          <div class="seal">II</div>
-          <h3>We Build the Plan</h3>
-          <p>You get a curated itinerary with real options — cabin or room tier, added perks, and the
-            logistics already thought through.</p>
-        </div>
-        <div class="step">
-          <div class="seal">III</div>
-          <h3>You Travel, We're On Call</h3>
-          <p>If anything shifts — a delay, a change of plan — you send one message. We handle it while you
-            keep moving.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- APPROACH -->
+<section id="approach" class="approach">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">The Verity Approach</p>
+<h2>Three steps, start to departure.</h2>
+<p>No call centers, no runaround — a straightforward process from first inquiry to the day you
+leave.</p>
+</div>
+<div class="steps">
+<div class="step">
+<div class="seal">I</div>
+<h3>You Share the Vision</h3>
+<p>A short inquiry tells us where you want to go, when, and what matters most — budget, pace,
+privacy, celebration.</p>
+</div>
+<div class="step">
+<div class="seal">II</div>
+<h3>We Build the Plan</h3>
+<p>You get a curated itinerary with real options — cabin or room tier, added perks, and the
+logistics already thought through.</p>
+</div>
+<div class="step">
+<div class="seal">III</div>
+<h3>You Travel, We're On Call</h3>
+<p>If anything shifts — a delay, a change of plan — you send one message. We handle it while you
+keep moving.</p>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- WHY AN ADVISOR (SEO content) -->
-  <section id="why" class="why-advisor">
-    <div class="wrap">
-      <div>
-        <p class="eyebrow">Why Book With an Advisor</p>
-        <h2>It costs the same. It just does more.</h2>
-        <div class="copy">
-          <p>Cruise and resort pricing is protected — booking through Verity costs the same as booking
-            directly. The difference is what's included: added onboard credit, upgraded amenities, and
-            someone who already knows which cabins to avoid and which suites are actually worth the tier.</p>
-          <a href="/blog/why-book-with-a-travel-advisor" class="read-link">Read the full breakdown &rarr;</a>
-        </div>
-      </div>
-      <ul class="why-list">
-        <li>
-          <span class="wave">&#8767;</span>
-          <div>
-            <strong>The Price Is Identical, the Perks Aren't</strong>
-            <span class="desc">Onboard credit, welcome amenities and combinable offers that don't appear
-              on a standard booking screen.</span>
-          </div>
-        </li>
-        <li>
-          <span class="wave">&#8767;</span>
-          <div>
-            <strong>Cabin &amp; Suite Knowledge</strong>
-            <span class="desc">Deck-plan familiarity that avoids the noisy stateroom under the pool
-              deck — and finds the suite tier that's genuinely worth it.</span>
-          </div>
-        </li>
-        <li>
-          <span class="wave">&#8767;</span>
-          <div>
-            <strong>The Details Around the Trip</strong>
-            <span class="desc">Flights, transfers, excursion vetting and dining reservations, planned
-              before you arrive — not figured out once you're there.</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+<!-- WHY AN ADVISOR (SEO content) -->
+<section id="why" class="why-advisor">
+<div class="wrap">
+<div>
+<p class="eyebrow">Why Book With an Advisor</p>
+<h2>It costs the same. It just does more.</h2>
+<div class="copy">
+<p>Cruise and resort pricing is protected — booking through Verity costs the same as booking
+directly. The difference is what's included: added onboard credit, upgraded amenities, and
+someone who already knows which cabins to avoid and which suites are actually worth the tier.</p>
+<a href="/blog/why-book-with-a-travel-advisor" class="read-link">Read the full breakdown &rarr;</a>
+</div>
+</div>
+<ul class="why-list">
+<li>
+<span class="wave">&#8767;</span>
+<div>
+<strong>The Price Is Identical, the Perks Aren't</strong>
+<span class="desc">Onboard credit, welcome amenities and combinable offers that don't appear
+on a standard booking screen.</span>
+</div>
+</li>
+<li>
+<span class="wave">&#8767;</span>
+<div>
+<strong>Cabin &amp; Suite Knowledge</strong>
+<span class="desc">Deck-plan familiarity that avoids the noisy stateroom under the pool
+deck — and finds the suite tier that's genuinely worth it.</span>
+</div>
+</li>
+<li>
+<span class="wave">&#8767;</span>
+<div>
+<strong>The Details Around the Trip</strong>
+<span class="desc">Flights, transfers, excursion vetting and dining reservations, planned
+before you arrive — not figured out once you're there.</span>
+</div>
+</li>
+</ul>
+</div>
+</section>
 
-  <!-- TESTIMONIALS -->
-  <section id="reviews" class="testimonials">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">From Recent Trips</p>
-        <h2>What clients say afterward.</h2>
-      </div>
-      <div class="quote-grid">
-        <div class="quote-card">
-          <p class="q">"I sent one email and the whole cruise came back planned better than I could have
-            done in a week of research."</p>
-          <p class="attrib">— K., Alaska Cruise</p>
-        </div>
-        <div class="quote-card">
-          <p class="q">"Our flight got delayed and Verity had already rebooked the transfer before we
-            landed. Didn't even have to ask."</p>
-          <p class="attrib">— M., Executive Conference Trip</p>
-        </div>
-        <div class="quote-card">
-          <p class="q">"Same price as booking it myself, but somehow we ended up with a suite upgrade and
-            dinner reservations we'd never have gotten alone."</p>
-          <p class="attrib">— R., Anniversary Trip</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- LEAD MAGNET: CHECKLIST SIGNUP -->
+<section id="checklist" class="lead-magnet">
+<div class="wrap lead-magnet-inner">
+<p class="eyebrow">Free Planning Guide</p>
+<h2>Not ready to book? Start with the checklist.</h2>
+<p>Get the Smart Cruise Planning Checklist — the same questions we walk every client through before booking.</p>
+<form id="checklist-form" class="checklist-form" novalidate>
+<input type="email" id="checklist-email" name="email" placeholder="you@example.com" required autocomplete="email">
+<button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+</form>
+<p class="checklist-status" id="checklist-status"></p>
+<p class="form-note">Occasional trip tips and destination guides. Unsubscribe anytime.</p>
+</div>
+</section>
 
-  <!-- CTA / INQUIRY FORM -->
-  <section id="contact" class="cta-section">
-    <div class="wrap">
-      <h2>Where to next?</h2>
-      <p>Tell us the shape of the trip you're imagining — we'll follow up to talk through the details.</p>
+<!-- TESTIMONIALS -->
+<section id="reviews" class="testimonials">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">From Recent Trips</p>
+<h2>What clients say afterward.</h2>
+</div>
+<div class="quote-grid">
+<div class="quote-card">
+<p class="q">"I sent one email and the whole cruise came back planned better than I could have
+done in a week of research."</p>
+<p class="attrib">— K., Alaska Cruise</p>
+</div>
+<div class="quote-card">
+<p class="q">"Our flight got delayed and Verity had already rebooked the transfer before we
+landed. Didn't even have to ask."</p>
+<p class="attrib">— M., Executive Conference Trip</p>
+</div>
+<div class="quote-card">
+<p class="q">"Same price as booking it myself, but somehow we ended up with a suite upgrade and
+dinner reservations we'd never have gotten alone."</p>
+<p class="attrib">— R., Anniversary Trip</p>
+</div>
+</div>
+</div>
+</section>
 
-      <form class="inquiry-form" id="inquiry-form" novalidate>
-        <div class="form-row two-col">
-          <div>
-            <label for="fullName">Full name</label>
-            <input type="text" id="fullName" name="fullName" required autocomplete="name">
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-        </div>
+<!-- CTA / INQUIRY FORM -->
+<section id="contact" class="cta-section">
+<div class="wrap">
+<h2>Where to next?</h2>
+<p>Tell us the shape of the trip you're imagining — we'll follow up to talk through the details.</p>
 
-        <div class="form-row two-col">
-          <div>
-            <label for="phone">Phone <span class="opt">(optional)</span></label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
-          </div>
-          <div>
-            <label for="tripType">Trip type</label>
-            <select id="tripType" name="tripType" required>
-              <option value="">Select one</option>
-              <option>Cruise</option>
-              <option>Hotel Stay</option>
-              <option>Conference or Group Travel</option>
-              <option>Multi-Destination</option>
-              <option>Not Sure Yet</option>
-            </select>
-          </div>
-        </div>
+<form class="inquiry-form" id="inquiry-form" novalidate>
+<div class="form-row two-col">
+<div>
+<label for="fullName">Full name</label>
+<input type="text" id="fullName" name="fullName" required autocomplete="name">
+</div>
+<div>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required autocomplete="email">
+</div>
+</div>
 
-        <div class="form-row">
-          <label>Preferred contact method</label>
-          <div class="choice-group">
-            <label><input type="checkbox" name="contactMethod" value="Email"> Email</label>
-            <label><input type="checkbox" name="contactMethod" value="Phone Call"> Phone Call</label>
-            <label><input type="checkbox" name="contactMethod" value="Text"> Text</label>
-          </div>
-        </div>
+<div class="form-row two-col">
+<div>
+<label for="phone">Phone <span class="opt">(optional)</span></label>
+<input type="tel" id="phone" name="phone" autocomplete="tel">
+</div>
+<div>
+<label for="tripType">Trip type</label>
+<select id="tripType" name="tripType" required>
+<option value="">Select one</option>
+<option>Cruise</option>
+<option>Hotel Stay</option>
+<option>Conference or Group Travel</option>
+<option>Multi-Destination</option>
+<option>Not Sure Yet</option>
+</select>
+</div>
+</div>
 
-        <div class="form-row two-col">
-          <div>
-            <label for="destinations">Destination(s) <span class="opt">(optional)</span></label>
-            <input type="text" id="destinations" name="destinations">
-          </div>
-          <div>
-            <label for="dates">Approximate dates <span class="opt">(or flexible)</span></label>
-            <input type="text" id="dates" name="dates">
-          </div>
-        </div>
+<div class="form-row">
+<label>Preferred contact method</label>
+<div class="choice-group">
+<label><input type="checkbox" name="contactMethod" value="Email"> Email</label>
+<label><input type="checkbox" name="contactMethod" value="Phone Call"> Phone Call</label>
+<label><input type="checkbox" name="contactMethod" value="Text"> Text</label>
+</div>
+</div>
 
-        <div class="form-row two-col">
-          <div>
-            <label for="travelers">Travelers <span class="opt">(and ages of children)</span></label>
-            <input type="text" id="travelers" name="travelers">
-          </div>
-          <div>
-            <label for="budget">Approximate budget per person</label>
-            <select id="budget" name="budget" required>
-              <option value="">Select one</option>
-              <option>$ — Budget-conscious</option>
-              <option>$$ — Moderate</option>
-              <option>$$$ — Upscale</option>
-              <option>$$$$ — Luxury / no budget cap</option>
-            </select>
-          </div>
-        </div>
+<div class="form-row two-col">
+<div>
+<label for="destinations">Destination(s) <span class="opt">(optional)</span></label>
+<input type="text" id="destinations" name="destinations">
+</div>
+<div>
+<label for="dates">Approximate dates <span class="opt">(or flexible)</span></label>
+<input type="text" id="dates" name="dates">
+</div>
+</div>
 
-        <div class="form-row">
-          <label>What matters most on this trip? <span class="opt">(select all that apply)</span></label>
-          <div class="choice-group">
-            <label><input type="checkbox" name="priorities" value="Relaxation"> Relaxation</label>
-            <label><input type="checkbox" name="priorities" value="Adventure / Excursions"> Adventure / Excursions</label>
-            <label><input type="checkbox" name="priorities" value="Fine Dining"> Fine Dining</label>
-            <label><input type="checkbox" name="priorities" value="Privacy / Exclusivity"> Privacy / Exclusivity</label>
-            <label><input type="checkbox" name="priorities" value="Family-Friendly"> Family-Friendly</label>
-            <label><input type="checkbox" name="priorities" value="Business / Networking"> Business / Networking</label>
-            <label><input type="checkbox" name="priorities" value="Special Occasion"> Special Occasion</label>
-          </div>
-        </div>
+<div class="form-row two-col">
+<div>
+<label for="travelers">Travelers <span class="opt">(and ages of children)</span></label>
+<input type="text" id="travelers" name="travelers">
+</div>
+<div>
+<label for="budget">Approximate budget per person</label>
+<select id="budget" name="budget" required>
+<option value="">Select one</option>
+<option>$ — Budget-conscious</option>
+<option>$$ — Moderate</option>
+<option>$$$ — Upscale</option>
+<option>$$$$ — Luxury / no budget cap</option>
+</select>
+</div>
+</div>
 
-        <div class="form-row">
-          <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
-          <textarea id="notes" name="notes"></textarea>
-        </div>
+<div class="form-row">
+<label>What matters most on this trip? <span class="opt">(select all that apply)</span></label>
+<div class="choice-group">
+<label><input type="checkbox" name="priorities" value="Relaxation"> Relaxation</label>
+<label><input type="checkbox" name="priorities" value="Adventure / Excursions"> Adventure / Excursions</label>
+<label><input type="checkbox" name="priorities" value="Fine Dining"> Fine Dining</label>
+<label><input type="checkbox" name="priorities" value="Privacy / Exclusivity"> Privacy / Exclusivity</label>
+<label><input type="checkbox" name="priorities" value="Family-Friendly"> Family-Friendly</label>
+<label><input type="checkbox" name="priorities" value="Business / Networking"> Business / Networking</label>
+<label><input type="checkbox" name="priorities" value="Special Occasion"> Special Occasion</label>
+</div>
+</div>
 
-        <div class="form-row">
-          <label for="referral">How did you hear about Verity? <span class="opt">(optional)</span></label>
-          <input type="text" id="referral" name="referral">
-        </div>
+<div class="form-row">
+<label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
+<textarea id="notes" name="notes"></textarea>
+</div>
 
-        <button type="submit" class="form-submit">Send Trip Inquiry</button>
-        <p class="form-note">We'll follow up within one business day.</p>
-        <div class="form-status" id="form-status"></div>
-      </form>
-    </div>
-  </section>
+<div class="form-row">
+<label for="referral">How did you hear about Verity? <span class="opt">(optional)</span></label>
+<input type="text" id="referral" name="referral">
+</div>
+
+<button type="submit" class="form-submit">Send Trip Inquiry</button>
+<p class="form-note">We'll follow up within one business day.</p>
+<div class="form-status" id="form-status"></div>
+</form>
+</div>
+</section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="foot-row">
-      <div>
-        <div class="foot-logo">Verity</div>
-        <p style="max-width:32ch; margin-top:10px; color:#9BA5BC;">Travel, thoughtfully planned.</p>
-        <div class="foot-social">
-          <a href="https://www.instagram.com/veritytravelsco" aria-label="Instagram" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.7c-.9.3-1.6.8-2.3 1.5C1.1 2.9.6 3.6.3 4.5-.1 5.3-.3 6.2-.3 7.5-.4 8.8-.4 9.2-.4 12.5s0 3.7.1 4.9c0 1.3.2 2.2.6 3 .3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.3-.7-.7-1.4-1.2-2.3-1.5-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.5-1.5 1.5-.8 0-1.5-.6-1.5-1.5s.6-1.5 1.5-1.5 1.5.7 1.5 1.5z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/veritytravels" aria-label="Facebook" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.5.1 2.8.1v3.2h-1.9c-1.5 0-1.8.7-1.8 1.7v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z"/></svg>
-          </a>
-          <a href="https://x.com/veritytravels" aria-label="X (Twitter)" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@veritytravelsco" aria-label="TikTok" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.6 6.3c-1.5-.3-2.9-1.1-3.9-2.3-.6-.7-1-1.6-1.2-2.5V.9h-3.7v14.9c0 .9-.3 1.7-.9 2.4-.6.6-1.4 1-2.3 1s-1.7-.4-2.3-1c-.6-.6-.9-1.4-.9-2.4s.3-1.7.9-2.4c.6-.6 1.4-1 2.3-1 .4 0 .8.1 1.2.2v-3.8c-.4-.1-.8-.1-1.2-.1-1.9 0-3.7.8-5 2.1-1.3 1.3-2.1 3.1-2.1 5s.8 3.7 2.1 5c1.3 1.3 3.1 2.1 5 2.1s3.7-.8 5-2.1c1.3-1.3 2.1-3.1 2.1-5V8.7c1.5 1 3.2 1.6 5 1.6V6.6c-.7 0-1.4-.1-2-.3z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="foot-links">
-        <a href="#services">Services</a>
-        <a href="#approach">How It Works</a>
-        <a href="/blog/">Journal</a>
-        <a href="#reviews">Reviews</a>
-        <a href="mailto:hello@veritytravels.com">Email Us</a>
-      </div>
-    </div>
-    <p class="copyright">&copy; 2026 Verity Travel. A Fora Travel advisory. All trips booked in partnership
-      with Fora.</p>
-  </div>
+<div class="wrap">
+<div class="foot-row">
+<div>
+<div class="foot-logo">Verity</div>
+<p style="max-width:32ch; margin-top:10px; color:#9BA5BC;">Travel, thoughtfully planned.</p>
+<div class="foot-social">
+<a href="https://www.instagram.com/veritytravelsco" aria-label="Instagram" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.7c-.9.3-1.6.8-2.3 1.5C1.1 2.9.6 3.6.3 4.5-.1 5.3-.3 6.2-.3 7.5-.4 8.8-.4 9.2-.4 12.5s0 3.7.1 4.9c0 1.3.2 2.2.6 3 .3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.6-1.5-2.3-.7-.7-1.4-1.2-2.3-1.5-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.5-1.5 1.5-.8 0-1.5-.6-1.5-1.5s.6-1.5 1.5-1.5 1.5.7 1.5 1.5z"/></svg>
+</a>
+<a href="https://www.facebook.com/veritytravels" aria-label="Facebook" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.5.1 2.8.1v3.2h-1.9c-1.5 0-1.8.7-1.8 1.7v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z"/></svg>
+</a>
+<a href="https://x.com/veritytravels" aria-label="X (Twitter)" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+<a href="https://www.tiktok.com/@veritytravelsco" aria-label="TikTok" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.6 6.3c-1.5-.3-2.9-1.1-3.9-2.3-.6-.7-1-1.6-1.2-2.5V.9h-3.7v14.9c0 .9-.3 1.7-.9 2.4-.6.6-1.4 1-2.3 1s-1.7-.4-2.3-1c-.6-.6-.9-1.4-.9-2.4s.3-1.7.9-2.4c.6-.6 1.4-1 2.3-1 .4 0 .8.1 1.2.2v-3.8c-.4-.1-.8-.1-1.2-.1-1.9 0-3.7.8-5 2.1-1.3 1.3-2.1 3.1-2.1 5s.8 3.7 2.1 5c1.3 1.3 3.1 2.1 5 2.1s3.7-.8 5-2.1c1.3-1.3 2.1-3.1 2.1-5V8.7c1.5 1 3.2 1.6 5 1.6V6.6c-.7 0-1.4-.1-2-.3z"/></svg>
+</a>
+</div>
+</div>
+<div class="foot-links">
+<a href="#services">Services</a>
+<a href="#approach">How It Works</a>
+<a href="/blog/">Journal</a>
+<a href="#reviews">Reviews</a>
+<a href="mailto:hello@veritytravels.com">Email Us</a>
+</div>
+</div>
+<p class="copyright">&copy; 2026 Verity Travel. A Fora Travel advisory. All trips booked in partnership
+with Fora.</p>
+</div>
 </footer>
 
 <script>
-  const inquiryForm = document.getElementById('inquiry-form');
-  const statusBox = document.getElementById('form-status');
+const inquiryForm = document.getElementById('inquiry-form');
+const statusBox = document.getElementById('form-status');
 
-  inquiryForm?.addEventListener('submit', async (e) => {
-    e.preventDefault();
+inquiryForm?.addEventListener('submit', async (e) => {
+e.preventDefault();
 
-    const requiredFields = ['fullName', 'email', 'tripType', 'budget'];
-    for (const name of requiredFields) {
-      const field = inquiryForm.elements[name];
-      if (!field.value.trim()) {
-        field.reportValidity();
-        return;
-      }
-    }
+const requiredFields = ['fullName', 'email', 'tripType', 'budget'];
+for (const name of requiredFields) {
+const field = inquiryForm.elements[name];
+if (!field.value.trim()) {
+field.reportValidity();
+return;
+}
+}
 
-    const formData = new FormData(inquiryForm);
-    const payload = {
-      fullName: formData.get('fullName'),
-      email: formData.get('email'),
-      phone: formData.get('phone') || '',
-      contactMethod: formData.getAll('contactMethod'),
-      tripType: formData.get('tripType'),
-      destinations: formData.get('destinations') || '',
-      dates: formData.get('dates') || '',
-      travelers: formData.get('travelers') || '',
-      budget: formData.get('budget'),
-      priorities: formData.getAll('priorities'),
-      notes: formData.get('notes') || '',
-      referral: formData.get('referral') || ''
-    };
+const formData = new FormData(inquiryForm);
+const payload = {
+fullName: formData.get('fullName'),
+email: formData.get('email'),
+phone: formData.get('phone') || '',
+contactMethod: formData.getAll('contactMethod'),
+tripType: formData.get('tripType'),
+destinations: formData.get('destinations') || '',
+dates: formData.get('dates') || '',
+travelers: formData.get('travelers') || '',
+budget: formData.get('budget'),
+priorities: formData.getAll('priorities'),
+notes: formData.get('notes') || '',
+referral: formData.get('referral') || ''
+};
 
-    const submitBtn = inquiryForm.querySelector('.form-submit');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
-    statusBox.style.display = 'none';
+const submitBtn = inquiryForm.querySelector('.form-submit');
+submitBtn.disabled = true;
+submitBtn.textContent = 'Sending…';
+statusBox.style.display = 'none';
 
-    try {
-      const res = await fetch('/api/inquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
+try {
+const res = await fetch('/api/inquiry', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(payload)
+});
 
-      if (!res.ok) throw new Error('Request failed');
+if (!res.ok) throw new Error('Request failed');
 
-      statusBox.textContent = "Thank you — your inquiry is in. We'll follow up within one business day.";
-      statusBox.className = 'form-status success';
-      statusBox.style.display = 'block';
-      inquiryForm.reset();
-    } catch (err) {
-      statusBox.textContent = "Something went wrong sending that. Please email us directly at hello@veritytravels.com.";
-      statusBox.className = 'form-status error';
-      statusBox.style.display = 'block';
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send Trip Inquiry';
-    }
-  });
+statusBox.textContent = "Thank you — your inquiry is in. We'll follow up within one business day.";
+statusBox.className = 'form-status success';
+statusBox.style.display = 'block';
+inquiryForm.reset();
+} catch (err) {
+statusBox.textContent = "Something went wrong sending that. Please email us directly at hello@veritytravels.com.";
+statusBox.className = 'form-status error';
+statusBox.style.display = 'block';
+} finally {
+submitBtn.disabled = false;
+submitBtn.textContent = 'Send Trip Inquiry';
+}
+});
 
-  document.querySelector('.nav-toggle')?.addEventListener('click', () => {
-    const links = document.querySelector('nav.links');
-    const isOpen = links.style.display === 'flex';
-    links.style.display = isOpen ? 'none' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '68px';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = '#F4EFE6';
-    links.style.padding = '20px 32px';
-    links.style.borderBottom = '1px solid #E3DACB';
-  });
+document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+const links = document.querySelector('nav.links');
+const isOpen = links.style.display === 'flex';
+links.style.display = isOpen ? 'none' : 'flex';
+links.style.flexDirection = 'column';
+links.style.position = 'absolute';
+links.style.top = '68px';
+links.style.left = '0';
+links.style.right = '0';
+links.style.background = '#F4EFE6';
+links.style.padding = '20px 32px';
+links.style.borderBottom = '1px solid #E3DACB';
+});
+</script>
+
+<script>
+const checklistForm = document.getElementById('checklist-form');
+const checklistStatus = document.getElementById('checklist-status');
+
+checklistForm?.addEventListener('submit', async (e) => {
+e.preventDefault();
+const emailInput = document.getElementById('checklist-email');
+const btn = checklistForm.querySelector('button');
+
+btn.disabled = true;
+btn.textContent = 'Sending…';
+checklistStatus.textContent = '';
+
+try {
+const res = await fetch('/api/subscribe', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ email: emailInput.value })
+});
+if (!res.ok) throw new Error('Request failed');
+checklistStatus.textContent = "You're in — check your inbox for the checklist.";
+emailInput.value = '';
+} catch (err) {
+checklistStatus.textContent = 'Something went wrong — please try again.';
+} finally {
+btn.disabled = false;
+btn.textContent = 'Send Me the Checklist';
+}
+});
 </script>
 
 </body>
