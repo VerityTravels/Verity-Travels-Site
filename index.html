@@ -124,6 +124,7 @@ background: var(--navy);
 color: var(--paper);
 }
 .btn-primary:hover { background: var(--navy-deep); }
+nav.links a.btn-primary { color: var(--paper); }
 .btn-ghost {
 border: 1px solid var(--navy);
 color: var(--navy);
@@ -650,6 +651,13 @@ nav.links { display: none; }
 .why-advisor .wrap { grid-template-columns: 1fr; gap: 32px; }
 .quote-grid { grid-template-columns: 1fr; }
 .trust-row { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 480px) {
+.card-cluster { height: 300px; }
+.postcard.pc1 { width: 190px; left: 0; top: 0; }
+.postcard.pc2 { width: 170px; left: 90px; top: 160px; }
+.postcard .pc-photo { height: 110px; }
+.postcard.pc2 .pc-photo { height: 95px; }
 }
 @media (max-width: 560px) {
 .services-grid { grid-template-columns: 1fr; }
